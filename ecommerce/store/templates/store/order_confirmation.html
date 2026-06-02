@@ -1,0 +1,55 @@
+{% extends 'store/base.html' %}
+{% block title %}Order Placed! - ShopEase Premium{% endblock %}
+{% block content %}
+
+<section class="order-confirmation-page" style="margin-top: 1rem; display: flex; align-items: center; justify-content: center; min-height: calc(100vh - var(--nav-height) - 150px);">
+    <div class="order-card" style="background: var(--surface-solid); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 3rem; box-shadow: var(--shadow-hover); text-align: center; max-width: 600px; width: 100%; display: flex; flex-direction: column; gap: 1.5rem; align-items: center;">
+        
+        <!-- Large animated success icon -->
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--success-bg); display: flex; align-items: center; justify-content: center; color: var(--success); font-size: 2.5rem; margin-bottom: 0.5rem; animation: successBounce 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        
+        @keyframes successBounce {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.1); }
+            80% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        <div>
+            <p class="eyebrow" style="color: var(--success); font-weight: 800;"><i class="fa-solid fa-square-check"></i> Transaction Confirmed</p>
+            <h1 style="font-size: 2.2rem; font-weight: 900; margin-top: 0.25rem;">Thanks for your purchase!</h1>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">Your order <strong>#{{ order.id }}</strong> has been registered and is currently being processed for shipment standard.</p>
+        </div>
+
+        <!-- Invoicing info panel -->
+        <div class="order-info-card" style="width: 100%; background: var(--bg-main); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; text-align: left; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 0.25rem;">
+                <span style="color: var(--text-muted); font-weight: 600;">Transaction Date</span>
+                <strong style="color: var(--text);">{{ order.order_date|date:'F j, Y, h:i A' }}</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 0.25rem;">
+                <span style="color: var(--text-muted); font-weight: 600;">Amount Paid</span>
+                <strong class="price" style="font-size: 1.15rem; color: var(--text);">${{ order.total_amount }}</strong>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <span style="color: var(--text-muted); font-weight: 600;">Shipping to</span>
+                <span style="font-weight: 700; color: var(--text);"><i class="fa-solid fa-map-pin"></i> {{ order.shipping_address }}</span>
+                <span style="color: var(--text-muted); font-size: 0.88rem; padding-left: 1.15rem;">{{ order.shipping_city }}, {{ order.shipping_zipcode }}, {{ order.shipping_country }}</span>
+            </div>
+        </div>
+
+        <!-- Order actions -->
+        <div class="order-actions" style="display: flex; gap: 1rem; width: 100%; margin-top: 1rem;">
+            <a class="btn" href="{% url 'order_detail' order.id %}" style="flex: 1; padding: 1rem;">
+                <i class="fa-solid fa-magnifying-glass-location"></i> Track Shipment
+            </a>
+            <a class="btn btn-secondary" href="{% url 'home' %}" style="flex: 1; padding: 1rem;">
+                <i class="fa-solid fa-basket-shopping"></i> Keep Shopping
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

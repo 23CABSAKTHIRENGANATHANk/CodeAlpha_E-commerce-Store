@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ShopEase - Discover meticulously crafted premium essentials, enjoy fast secure checkout, and receive secure home delivery." />
+    <title>{% block title %}ShopEase - Modern Premium Store{% endblock %}</title>
+    {% load static %}
+    <!-- Modern Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Premium Icons Support (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Design System Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <!-- Glassmorphic Header Navbar -->
+    <header class="topbar">
+        <div class="header-inner">
+            <a class="brand" href="{% url 'home' %}">
+                <i class="fa-solid fa-bag-shopping"></i> ShopEase
+            </a>
+            
+            <!-- Smart search field -->
+            <form class="search-form" action="{% url 'home' %}" method="get">
+                <input type="search" name="search" placeholder="Search premium essentials..." value="{{ request.GET.search }}" aria-label="Search products" />
+                <button type="submit" aria-label="Submit search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            
+            <!-- Navigation items -->
+            <nav class="nav-links">
+                <a class="nav-link" href="{% url 'home' %}"><i class="fa-solid fa-house"></i> Home</a>
+                <a class="nav-link" href="{% url 'cart' %}">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                    <span class="badge">{{ cart_count }}</span>
+                </a>
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                        <a class="nav-link" href="/admin/"><i class="fa-solid fa-screwdriver-wrench"></i> Admin</a>
+                    {% endif %}
+                    <a class="nav-link" href="{% url 'wishlist' %}"><i class="fa-solid fa-heart"></i> Wishlist</a>
+                    <a class="nav-link" href="{% url 'order_history' %}"><i class="fa-solid fa-receipt"></i> Orders</a>
+                    <a class="nav-link" href="{% url 'profile' %}"><i class="fa-solid fa-user-gear"></i> Account</a>
+                    <a class="nav-link" href="{% url 'logout' %}"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                {% else %}
+                    <a class="nav-link" href="{% url 'login' %}"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+                    <a class="nav-link" href="{% url 'register' %}"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                {% endif %}
+                
+                <!-- Dynamic Theme switcher toggle -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-nav-button" class="mobile-nav-button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <main class="site-content container">
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="message {{ message.tags }}">
+                        <i class="fa-solid {% if message.tags == 'success' %}fa-circle-check{% elif message.tags == 'error' %}fa-circle-exclamation{% else %}fa-triangle-exclamation{% endif %}"></i>
+                        <span>{{ message }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Dedicated Toast container stack -->
+    <div class="toast-container"></div>
+
+    <!-- Mobile Navigation drawer panel -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+        <div class="mobile-nav-inner">
+            <button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close navigation menu"><i class="fa-solid fa-xmark"></i></button>
+            <nav class="mobile-links">
+                <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="{% url 'cart' %}"><i class="fa-solid fa-cart-shopping"></i> Cart <span class="badge">{{ cart_count }}</span></a>
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                        <a href="/admin/"><i class="fa-solid fa-screwdriver-wrench"></i> Admin Panel</a>
+                    {% endif %}
+                    <a href="{% url 'wishlist' %}"><i class="fa-solid fa-heart"></i> Wishlist</a>
+                    <a href="{% url 'order_history' %}"><i class="fa-solid fa-receipt"></i> Orders</a>
+                    <a href="{% url 'profile' %}"><i class="fa-solid fa-user-gear"></i> Account</a>
+                    <a href="{% url 'logout' %}"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                {% else %}
+                    <a href="{% url 'login' %}"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+                    <a href="{% url 'register' %}"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                {% endif %}
+            </nav>
+        </div>
+    </div>
+
+    <!-- Premium Footer layout -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <p class="footer-brand"><i class="fa-solid fa-bag-shopping"></i> ShopEase</p>
+                <p class="footer-copy">Curating sleek essentials for the modern lifestyle. Fast, secure checkout.</p>
+            </div>
+            <p class="footer-note">&copy; {% now 'Y' %} ShopEase. Sakthi Renganathan K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main script files -->
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,112 @@
+{% extends 'store/base.html' %}
+{% block title %}Cart - ShopEase Premium{% endblock %}
+{% block content %}
+
+<section class="cart-page" style="margin-top: 1rem;">
+    <!-- Title Section -->
+    <div style="margin-bottom: 2.5rem;">
+        <p class="eyebrow"><i class="fa-solid fa-cart-shopping"></i> Shopping Basket</p>
+        <h1 style="font-size: 2.4rem;">Review your essentials.</h1>
+        <p style="color: var(--text-muted);">Adjust quantities or proceed to secure, encrypted checkout.</p>
+    </div>
+
+    {% if cart_items %}
+        <!-- Split Dual-Column Grid -->
+        <div class="cart-grid">
+            <!-- Left Side: Table of items -->
+            <div class="cart-table">
+                <!-- Header row -->
+                <div class="cart-row cart-header">
+                    <span>Product</span>
+                    <span>Unit Price</span>
+                    <span>Quantity</span>
+                    <span>Subtotal</span>
+                    <span style="text-align: right;">Remove</span>
+                </div>
+                
+                <!-- Items list -->
+                {% for item in cart_items %}
+                    <div class="cart-row" data-product-id="{{ item.product.id }}">
+                        <div class="cart-product">
+                            <img src="{{ item.product.display_image_url }}" alt="{{ item.product.name }}" />
+                            <div class="cart-product-info">
+                                <h4><a href="{% url 'product_detail' item.product.id %}" style="color: inherit;">{{ item.product.name }}</a></h4>
+                                <p class="product-category" style="font-size: 0.72rem; margin-top: 0.15rem;">{{ item.product.category.name }}</p>
+                                <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.25rem;">
+                                    {% if item.product.stock > 0 %}
+                                        <span class="in-stock">{{ item.product.stock }} available</span>
+                                    {% else %}
+                                        <span class="out-of-stock">Sold Out</span>
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Unit Price -->
+                        <span class="price col-price">${{ item.product.price }}</span>
+                        
+                        <!-- Inline AJAX step controls -->
+                        <div class="quantity-form">
+                            <button class="qty-dec" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" name="quantity" min="1" max="{{ item.product.stock }}" value="{{ item.quantity }}" aria-label="Quantity selector input" readonly />
+                            <button class="qty-inc" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        
+                        <!-- Subtotal -->
+                        <span class="price col-total">${{ item.total }}</span>
+                        
+                        <!-- Remove button -->
+                        <div style="text-align: right;">
+                            <a class="remove-cart-btn" href="{% url 'remove_from_cart' item.product.id %}" aria-label="Remove {{ item.product.name }} from cart">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            
+            <!-- Right Side: Sticky Floating Summary Panel -->
+            <div class="order-summary-panel">
+                <h2>Order Summary</h2>
+                
+                <div class="summary-row">
+                    <span style="color: var(--text-muted);">Cart Items ({{ cart_count }})</span>
+                    <span class="price" style="font-size: 0.95rem;">${{ total_price }}</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span style="color: var(--text-muted);">Standard Shipping</span>
+                    <span style="color: var(--success); font-weight: 700;">FREE</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span style="color: var(--text-muted);">Estimated Tax (VAT)</span>
+                    <span class="price" style="font-size: 0.95rem;">$0.00</span>
+                </div>
+                
+                <div class="summary-row total">
+                    <span>Order Total</span>
+                    <span>${{ total_price }}</span>
+                </div>
+                
+                <a class="btn" href="{% url 'checkout' %}" style="padding: 1.1rem; width: 100%; margin-top: 1rem; font-size: 1rem;">
+                    <i class="fa-solid fa-shield-halved"></i> Checkout Securely
+                </a>
+                
+                <div style="text-align: center; font-size: 0.78rem; color: var(--text-muted); display: flex; align-items: center; justify-content: center; gap: 0.35rem; margin-top: 0.5rem;">
+                    <i class="fa-solid fa-lock"></i> SSL Encrypted Payment Gateway
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <!-- Empty Cart placeholder -->
+        <div class="empty-state">
+            <i class="fa-solid fa-cart-flatbed-empty" style="font-size: 3.5rem; color: var(--text-muted); margin-bottom: 1.5rem; display: block;"></i>
+            <h2>Your premium basket is empty</h2>
+            <p>Ready to discover some extraordinary additions for your daily essential routine?</p>
+            <a class="btn" href="{% url 'home' %}"><i class="fa-solid fa-arrow-left"></i> Start Shopping</a>
+        </div>
+    {% endif %}
+</section>
+
+{% endblock %}

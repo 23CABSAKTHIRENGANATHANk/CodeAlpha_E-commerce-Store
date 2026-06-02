@@ -1,0 +1,3005 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "ecommerce/ecommerce/__init__.py",
+      "source_location": "L1",
+      "id": "ecommerce_init",
+      "community": 17,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "asgi.py",
+      "file_type": "code",
+      "source_file": "ecommerce/ecommerce/asgi.py",
+      "source_location": "L1",
+      "id": "ecommerce_asgi",
+      "community": 8,
+      "norm_label": "asgi.py"
+    },
+    {
+      "label": "ASGI config for ecommerce project.",
+      "file_type": "rationale",
+      "source_file": "ecommerce/ecommerce/asgi.py",
+      "source_location": "L1",
+      "id": "ecommerce_asgi_rationale_1",
+      "community": 8,
+      "norm_label": "asgi config for ecommerce project."
+    },
+    {
+      "label": "settings.py",
+      "file_type": "code",
+      "source_file": "ecommerce/ecommerce/settings.py",
+      "source_location": "L1",
+      "id": "ecommerce_settings",
+      "community": 9,
+      "norm_label": "settings.py"
+    },
+    {
+      "label": "Django settings for ecommerce project.",
+      "file_type": "rationale",
+      "source_file": "ecommerce/ecommerce/settings.py",
+      "source_location": "L1",
+      "id": "ecommerce_settings_rationale_1",
+      "community": 9,
+      "norm_label": "django settings for ecommerce project."
+    },
+    {
+      "label": "urls.py",
+      "file_type": "code",
+      "source_file": "ecommerce/ecommerce/urls.py",
+      "source_location": "L1",
+      "id": "ecommerce_urls",
+      "community": 10,
+      "norm_label": "urls.py"
+    },
+    {
+      "label": "admin_login_redirect()",
+      "file_type": "code",
+      "source_file": "ecommerce/ecommerce/urls.py",
+      "source_location": "L10",
+      "id": "ecommerce_urls_admin_login_redirect",
+      "community": 10,
+      "norm_label": "admin_login_redirect()"
+    },
+    {
+      "label": "URL configuration for ecommerce project.",
+      "file_type": "rationale",
+      "source_file": "ecommerce/ecommerce/urls.py",
+      "source_location": "L1",
+      "id": "ecommerce_urls_rationale_1",
+      "community": 10,
+      "norm_label": "url configuration for ecommerce project."
+    },
+    {
+      "label": "wsgi.py",
+      "file_type": "code",
+      "source_file": "ecommerce/ecommerce/wsgi.py",
+      "source_location": "L1",
+      "id": "ecommerce_wsgi",
+      "community": 11,
+      "norm_label": "wsgi.py"
+    },
+    {
+      "label": "WSGI config for ecommerce project.",
+      "file_type": "rationale",
+      "source_file": "ecommerce/ecommerce/wsgi.py",
+      "source_location": "L1",
+      "id": "ecommerce_wsgi_rationale_1",
+      "community": 11,
+      "norm_label": "wsgi config for ecommerce project."
+    },
+    {
+      "label": "manage.py",
+      "file_type": "code",
+      "source_file": "ecommerce/manage.py",
+      "source_location": "L1",
+      "id": "ecommerce_manage",
+      "community": 5,
+      "norm_label": "manage.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "ecommerce/manage.py",
+      "source_location": "L7",
+      "id": "ecommerce_manage_main",
+      "community": 5,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Run administrative tasks.",
+      "file_type": "rationale",
+      "source_file": "ecommerce/manage.py",
+      "source_location": "L8",
+      "id": "ecommerce_manage_rationale_8",
+      "community": 5,
+      "norm_label": "run administrative tasks."
+    },
+    {
+      "label": "seed_data.py",
+      "file_type": "code",
+      "source_file": "ecommerce/seed_data.py",
+      "source_location": "L1",
+      "id": "ecommerce_seed_data",
+      "community": 0,
+      "norm_label": "seed_data.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/__init__.py",
+      "source_location": "L1",
+      "id": "store_init",
+      "community": 15,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "admin.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L1",
+      "id": "store_admin",
+      "community": 0,
+      "norm_label": "admin.py"
+    },
+    {
+      "label": "OrderItemInline",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L8",
+      "id": "store_admin_orderiteminline",
+      "community": 0,
+      "norm_label": "orderiteminline"
+    },
+    {
+      "label": "LowStockFilter",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L14",
+      "id": "store_admin_lowstockfilter",
+      "community": 0,
+      "norm_label": "lowstockfilter"
+    },
+    {
+      "label": ".lookups()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L18",
+      "id": "store_admin_lowstockfilter_lookups",
+      "community": 0,
+      "norm_label": ".lookups()"
+    },
+    {
+      "label": ".queryset()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L25",
+      "id": "store_admin_lowstockfilter_queryset",
+      "community": 0,
+      "norm_label": ".queryset()"
+    },
+    {
+      "label": "export_to_csv()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L35",
+      "id": "store_admin_export_to_csv",
+      "community": 0,
+      "norm_label": "export_to_csv()"
+    },
+    {
+      "label": "CategoryAdmin",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L58",
+      "id": "store_admin_categoryadmin",
+      "community": 0,
+      "norm_label": "categoryadmin"
+    },
+    {
+      "label": "Media",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L62",
+      "id": "store_admin_media",
+      "community": 0,
+      "norm_label": "media"
+    },
+    {
+      "label": "ProductAdmin",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L69",
+      "id": "store_admin_productadmin",
+      "community": 0,
+      "norm_label": "productadmin"
+    },
+    {
+      "label": ".image_tag()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L77",
+      "id": "store_admin_productadmin_image_tag",
+      "community": 0,
+      "norm_label": ".image_tag()"
+    },
+    {
+      "label": ".stock_status()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L83",
+      "id": "store_admin_productadmin_stock_status",
+      "community": 0,
+      "norm_label": ".stock_status()"
+    },
+    {
+      "label": "OrderAdmin",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L99",
+      "id": "store_admin_orderadmin",
+      "community": 2,
+      "norm_label": "orderadmin"
+    },
+    {
+      "label": ".mark_as_confirmed()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L108",
+      "id": "store_admin_orderadmin_mark_as_confirmed",
+      "community": 2,
+      "norm_label": ".mark_as_confirmed()"
+    },
+    {
+      "label": ".mark_as_shipped()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L112",
+      "id": "store_admin_orderadmin_mark_as_shipped",
+      "community": 2,
+      "norm_label": ".mark_as_shipped()"
+    },
+    {
+      "label": ".mark_as_delivered()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L116",
+      "id": "store_admin_orderadmin_mark_as_delivered",
+      "community": 2,
+      "norm_label": ".mark_as_delivered()"
+    },
+    {
+      "label": ".mark_as_cancelled()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L120",
+      "id": "store_admin_orderadmin_mark_as_cancelled",
+      "community": 2,
+      "norm_label": ".mark_as_cancelled()"
+    },
+    {
+      "label": "OrderItemAdmin",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L131",
+      "id": "store_admin_orderitemadmin",
+      "community": 0,
+      "norm_label": "orderitemadmin"
+    },
+    {
+      "label": "WishlistAdmin",
+      "file_type": "code",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L142",
+      "id": "store_admin_wishlistadmin",
+      "community": 0,
+      "norm_label": "wishlistadmin"
+    },
+    {
+      "label": "apps.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/apps.py",
+      "source_location": "L1",
+      "id": "store_apps",
+      "community": 6,
+      "norm_label": "apps.py"
+    },
+    {
+      "label": "StoreConfig",
+      "file_type": "code",
+      "source_file": "ecommerce/store/apps.py",
+      "source_location": "L4",
+      "id": "store_apps_storeconfig",
+      "community": 6,
+      "norm_label": "storeconfig"
+    },
+    {
+      "label": "AppConfig",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "appconfig",
+      "community": 6,
+      "norm_label": "appconfig"
+    },
+    {
+      "label": "context_processors.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/context_processors.py",
+      "source_location": "L1",
+      "id": "store_context_processors",
+      "community": 7,
+      "norm_label": "context_processors.py"
+    },
+    {
+      "label": "cart_context()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/context_processors.py",
+      "source_location": "L1",
+      "id": "store_context_processors_cart_context",
+      "community": 7,
+      "norm_label": "cart_context()"
+    },
+    {
+      "label": "Add cart information to all templates.",
+      "file_type": "rationale",
+      "source_file": "ecommerce/store/context_processors.py",
+      "source_location": "L2",
+      "id": "store_context_processors_rationale_2",
+      "community": 7,
+      "norm_label": "add cart information to all templates."
+    },
+    {
+      "label": "forms.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L1",
+      "id": "store_forms",
+      "community": 1,
+      "norm_label": "forms.py"
+    },
+    {
+      "label": "RegisterForm",
+      "file_type": "code",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L6",
+      "id": "store_forms_registerform",
+      "community": 1,
+      "norm_label": "registerform"
+    },
+    {
+      "label": "UserCreationForm",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "usercreationform",
+      "community": 1,
+      "norm_label": "usercreationform"
+    },
+    {
+      "label": "Meta",
+      "file_type": "code",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L51",
+      "id": "store_forms_meta",
+      "community": 1,
+      "norm_label": "meta"
+    },
+    {
+      "label": ".clean_email()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L55",
+      "id": "store_forms_registerform_clean_email",
+      "community": 1,
+      "norm_label": ".clean_email()"
+    },
+    {
+      "label": "LoginForm",
+      "file_type": "code",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L62",
+      "id": "store_forms_loginform",
+      "community": 1,
+      "norm_label": "loginform"
+    },
+    {
+      "label": "CheckoutForm",
+      "file_type": "code",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L79",
+      "id": "store_forms_checkoutform",
+      "community": 1,
+      "norm_label": "checkoutform"
+    },
+    {
+      "label": "ProductSearchForm",
+      "file_type": "code",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L103",
+      "id": "store_forms_productsearchform",
+      "community": 1,
+      "norm_label": "productsearchform"
+    },
+    {
+      "label": "0001_initial.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/migrations/0001_initial.py",
+      "source_location": "L1",
+      "id": "migrations_0001_initial",
+      "community": 12,
+      "norm_label": "0001_initial.py"
+    },
+    {
+      "label": "Migration",
+      "file_type": "code",
+      "source_file": "ecommerce/store/migrations/0001_initial.py",
+      "source_location": "L9",
+      "id": "migrations_0001_initial_migration",
+      "community": 12,
+      "norm_label": "migration"
+    },
+    {
+      "label": "0002_product_image_url.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/migrations/0002_product_image_url.py",
+      "source_location": "L1",
+      "id": "migrations_0002_product_image_url",
+      "community": 13,
+      "norm_label": "0002_product_image_url.py"
+    },
+    {
+      "label": "Migration",
+      "file_type": "code",
+      "source_file": "ecommerce/store/migrations/0002_product_image_url.py",
+      "source_location": "L6",
+      "id": "migrations_0002_product_image_url_migration",
+      "community": 13,
+      "norm_label": "migration"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/migrations/__init__.py",
+      "source_location": "L1",
+      "id": "migrations_init",
+      "community": 18,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "models.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L1",
+      "id": "store_models",
+      "community": 0,
+      "norm_label": "models.py"
+    },
+    {
+      "label": "Category",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L5",
+      "id": "store_models_category",
+      "community": 0,
+      "norm_label": "category"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L10",
+      "id": "store_models_category_str",
+      "community": 0,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": "Meta",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L13",
+      "id": "store_models_meta",
+      "community": 0,
+      "norm_label": "meta"
+    },
+    {
+      "label": "Product",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L17",
+      "id": "store_models_product",
+      "community": 0,
+      "norm_label": "product"
+    },
+    {
+      "label": ".display_image_url()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L30",
+      "id": "store_models_product_display_image_url",
+      "community": 0,
+      "norm_label": ".display_image_url()"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L37",
+      "id": "store_models_product_str",
+      "community": 0,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": "Order",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L44",
+      "id": "store_models_order",
+      "community": 0,
+      "norm_label": "order"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L67",
+      "id": "store_models_order_str",
+      "community": 0,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": "OrderItem",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L74",
+      "id": "store_models_orderitem",
+      "community": 1,
+      "norm_label": "orderitem"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L81",
+      "id": "store_models_orderitem_str",
+      "community": 1,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": ".total_price()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L85",
+      "id": "store_models_orderitem_total_price",
+      "community": 1,
+      "norm_label": ".total_price()"
+    },
+    {
+      "label": "Wishlist",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L89",
+      "id": "store_models_wishlist",
+      "community": 0,
+      "norm_label": "wishlist"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L95",
+      "id": "store_models_wishlist_str",
+      "community": 0,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L1",
+      "id": "js_main",
+      "community": 4,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "updateThemeIcon()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L23",
+      "id": "js_main_updatethemeicon",
+      "community": 4,
+      "norm_label": "updatethemeicon()"
+    },
+    {
+      "label": "showToast()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L37",
+      "id": "js_main_showtoast",
+      "community": 4,
+      "norm_label": "showtoast()"
+    },
+    {
+      "label": "closeToast()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L73",
+      "id": "js_main_closetoast",
+      "community": 4,
+      "norm_label": "closetoast()"
+    },
+    {
+      "label": "getCSRFToken()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L180",
+      "id": "js_main_getcsrftoken",
+      "community": 4,
+      "norm_label": "getcsrftoken()"
+    },
+    {
+      "label": "updateQuantityOnServer()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L196",
+      "id": "js_main_updatequantityonserver",
+      "community": 4,
+      "norm_label": "updatequantityonserver()"
+    },
+    {
+      "label": "recalculateCartTotals()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L223",
+      "id": "js_main_recalculatecarttotals",
+      "community": 4,
+      "norm_label": "recalculatecarttotals()"
+    },
+    {
+      "label": "openMobileNav()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L314",
+      "id": "js_main_openmobilenav",
+      "community": 4,
+      "norm_label": "openmobilenav()"
+    },
+    {
+      "label": "closeMobileNav()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L321",
+      "id": "js_main_closemobilenav",
+      "community": 4,
+      "norm_label": "closemobilenav()"
+    },
+    {
+      "label": "tests.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L1",
+      "id": "store_tests",
+      "community": 0,
+      "norm_label": "tests.py"
+    },
+    {
+      "label": "StoreTestCase",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L7",
+      "id": "store_tests_storetestcase",
+      "community": 20,
+      "norm_label": "storetestcase"
+    },
+    {
+      "label": "TestCase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "testcase",
+      "community": 20,
+      "norm_label": "testcase"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L8",
+      "id": "store_tests_storetestcase_setup",
+      "community": 20,
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".test_home_view()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L37",
+      "id": "store_tests_storetestcase_test_home_view",
+      "community": 20,
+      "norm_label": ".test_home_view()"
+    },
+    {
+      "label": ".test_product_detail_view()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L52",
+      "id": "store_tests_storetestcase_test_product_detail_view",
+      "community": 20,
+      "norm_label": ".test_product_detail_view()"
+    },
+    {
+      "label": ".test_register_view()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L62",
+      "id": "store_tests_storetestcase_test_register_view",
+      "community": 20,
+      "norm_label": ".test_register_view()"
+    },
+    {
+      "label": ".test_login_logout_views()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L83",
+      "id": "store_tests_storetestcase_test_login_logout_views",
+      "community": 20,
+      "norm_label": ".test_login_logout_views()"
+    },
+    {
+      "label": ".test_cart_operations()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L100",
+      "id": "store_tests_storetestcase_test_cart_operations",
+      "community": 20,
+      "norm_label": ".test_cart_operations()"
+    },
+    {
+      "label": ".test_wishlist_operations()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L136",
+      "id": "store_tests_storetestcase_test_wishlist_operations",
+      "community": 20,
+      "norm_label": ".test_wishlist_operations()"
+    },
+    {
+      "label": ".test_checkout_and_orders()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L167",
+      "id": "store_tests_storetestcase_test_checkout_and_orders",
+      "community": 20,
+      "norm_label": ".test_checkout_and_orders()"
+    },
+    {
+      "label": ".test_profile_view()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L225",
+      "id": "store_tests_storetestcase_test_profile_view",
+      "community": 20,
+      "norm_label": ".test_profile_view()"
+    },
+    {
+      "label": ".test_admin_login_redirect()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L251",
+      "id": "store_tests_storetestcase_test_admin_login_redirect",
+      "community": 20,
+      "norm_label": ".test_admin_login_redirect()"
+    },
+    {
+      "label": "urls.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/urls.py",
+      "source_location": "L1",
+      "id": "store_urls",
+      "community": 15,
+      "norm_label": "urls.py"
+    },
+    {
+      "label": "views.py",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L1",
+      "id": "store_views",
+      "community": 1,
+      "norm_label": "views.py"
+    },
+    {
+      "label": "home()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L16",
+      "id": "store_views_home",
+      "community": 1,
+      "norm_label": "home()"
+    },
+    {
+      "label": "product_detail()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L55",
+      "id": "store_views_product_detail",
+      "community": 1,
+      "norm_label": "product_detail()"
+    },
+    {
+      "label": "register()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L75",
+      "id": "store_views_register",
+      "community": 1,
+      "norm_label": "register()"
+    },
+    {
+      "label": "login_view()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L96",
+      "id": "store_views_login_view",
+      "community": 1,
+      "norm_label": "login_view()"
+    },
+    {
+      "label": "logout_view()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L128",
+      "id": "store_views_logout_view",
+      "community": 1,
+      "norm_label": "logout_view()"
+    },
+    {
+      "label": "cart()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L135",
+      "id": "store_views_cart",
+      "community": 1,
+      "norm_label": "cart()"
+    },
+    {
+      "label": "add_to_cart()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L159",
+      "id": "store_views_add_to_cart",
+      "community": 1,
+      "norm_label": "add_to_cart()"
+    },
+    {
+      "label": "remove_from_cart()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L192",
+      "id": "store_views_remove_from_cart",
+      "community": 1,
+      "norm_label": "remove_from_cart()"
+    },
+    {
+      "label": "update_cart()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L207",
+      "id": "store_views_update_cart",
+      "community": 1,
+      "norm_label": "update_cart()"
+    },
+    {
+      "label": "checkout()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L236",
+      "id": "store_views_checkout",
+      "community": 1,
+      "norm_label": "checkout()"
+    },
+    {
+      "label": "order_confirmation()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L305",
+      "id": "store_views_order_confirmation",
+      "community": 1,
+      "norm_label": "order_confirmation()"
+    },
+    {
+      "label": "order_history()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L317",
+      "id": "store_views_order_history",
+      "community": 1,
+      "norm_label": "order_history()"
+    },
+    {
+      "label": "order_detail()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L328",
+      "id": "store_views_order_detail",
+      "community": 1,
+      "norm_label": "order_detail()"
+    },
+    {
+      "label": "wishlist()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L340",
+      "id": "store_views_wishlist",
+      "community": 1,
+      "norm_label": "wishlist()"
+    },
+    {
+      "label": "add_to_wishlist()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L357",
+      "id": "store_views_add_to_wishlist",
+      "community": 1,
+      "norm_label": "add_to_wishlist()"
+    },
+    {
+      "label": "profile()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L380",
+      "id": "store_views_profile",
+      "community": 1,
+      "norm_label": "profile()"
+    },
+    {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "ecommerce/vercel.json",
+      "source_location": "L1",
+      "id": "ecommerce_vercel",
+      "community": 19,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "ecommerce/vercel.json",
+      "source_location": "L2",
+      "id": "ecommerce_vercel_version",
+      "community": 19,
+      "norm_label": "version"
+    },
+    {
+      "label": "builds",
+      "file_type": "code",
+      "source_file": "ecommerce/vercel.json",
+      "source_location": "L3",
+      "id": "ecommerce_vercel_builds",
+      "community": 19,
+      "norm_label": "builds"
+    },
+    {
+      "label": "routes",
+      "file_type": "code",
+      "source_file": "ecommerce/vercel.json",
+      "source_location": "L9",
+      "id": "ecommerce_vercel_routes",
+      "community": 19,
+      "norm_label": "routes"
+    },
+    {
+      "label": "graphify.ps1",
+      "file_type": "code",
+      "source_file": "graphify.ps1",
+      "source_location": "L1",
+      "id": "graphify",
+      "community": 21,
+      "norm_label": "graphify.ps1"
+    },
+    {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "id": "vercel",
+      "community": 22,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "id": "vercel_version",
+      "community": 22,
+      "norm_label": "version"
+    },
+    {
+      "label": "builds",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "id": "vercel_builds",
+      "community": 22,
+      "norm_label": "builds"
+    },
+    {
+      "label": "routes",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L9",
+      "id": "vercel_routes",
+      "community": 22,
+      "norm_label": "routes"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L1",
+      "id": "rules_graphify",
+      "community": 14,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "id": "rules_graphify_graphify",
+      "community": 14,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L1",
+      "id": "workflows_graphify",
+      "community": 16,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "Workflow: graphify",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "id": "workflows_graphify_workflow_graphify",
+      "community": 16,
+      "norm_label": "workflow: graphify"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L1",
+      "id": "ecommerce_readme",
+      "community": 3,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "ShopEase E-commerce Django Project",
+      "file_type": "document",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L1",
+      "id": "ecommerce_readme_shopease_e_commerce_django_project",
+      "community": 3,
+      "norm_label": "shopease e-commerce django project"
+    },
+    {
+      "label": "Features",
+      "file_type": "document",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L5",
+      "id": "ecommerce_readme_features",
+      "community": 3,
+      "norm_label": "features"
+    },
+    {
+      "label": "Setup",
+      "file_type": "document",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L14",
+      "id": "ecommerce_readme_setup",
+      "community": 3,
+      "norm_label": "setup"
+    },
+    {
+      "label": "Notes",
+      "file_type": "document",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L57",
+      "id": "ecommerce_readme_notes",
+      "community": 3,
+      "norm_label": "notes"
+    },
+    {
+      "label": "getFocusableElements()",
+      "file_type": "code",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L38",
+      "community": 4,
+      "norm_label": "getfocusableelements()",
+      "id": "js_main_getfocusableelements"
+    }
+  ],
+  "links": [
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/ecommerce/asgi.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_asgi_rationale_1",
+      "target": "ecommerce_asgi"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/ecommerce/settings.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_settings_rationale_1",
+      "target": "ecommerce_settings"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/ecommerce/urls.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_urls",
+      "target": "ecommerce_urls_admin_login_redirect"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/ecommerce/urls.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_urls_rationale_1",
+      "target": "ecommerce_urls"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/ecommerce/wsgi.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_wsgi_rationale_1",
+      "target": "ecommerce_wsgi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/manage.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_manage",
+      "target": "ecommerce_manage_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/manage.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_manage_rationale_8",
+      "target": "ecommerce_manage_main"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/seed_data.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_seed_data",
+      "target": "store_models"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/urls.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_urls",
+      "target": "store_init"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_categoryadmin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_export_to_csv"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_lowstockfilter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_media"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_orderadmin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_orderitemadmin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_orderiteminline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_productadmin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_admin_wishlistadmin"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_models"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderiteminline",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderiteminline",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderiteminline",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderiteminline",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderiteminline",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin_lowstockfilter",
+      "target": "store_admin_lowstockfilter_lookups"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin_lowstockfilter",
+      "target": "store_admin_lowstockfilter_queryset"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_lowstockfilter",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_lowstockfilter",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_lowstockfilter",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_lowstockfilter",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_lowstockfilter",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_categoryadmin",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_categoryadmin",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_categoryadmin",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_categoryadmin",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_categoryadmin",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_media",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_media",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_media",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_media",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_media",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin_productadmin",
+      "target": "store_admin_productadmin_image_tag"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin_productadmin",
+      "target": "store_admin_productadmin_stock_status"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_productadmin",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_productadmin",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_productadmin",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_productadmin",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_productadmin",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin_orderadmin",
+      "target": "store_admin_orderadmin_mark_as_cancelled"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin_orderadmin",
+      "target": "store_admin_orderadmin_mark_as_confirmed"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin_orderadmin",
+      "target": "store_admin_orderadmin_mark_as_delivered"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_admin_orderadmin",
+      "target": "store_admin_orderadmin_mark_as_shipped"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderadmin",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderadmin",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderadmin",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderadmin",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderadmin",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderitemadmin",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderitemadmin",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderitemadmin",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderitemadmin",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_orderitemadmin",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_wishlistadmin",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_wishlistadmin",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_wishlistadmin",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_wishlistadmin",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_admin_wishlistadmin",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/apps.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_apps",
+      "target": "store_apps_storeconfig"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/apps.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_apps_storeconfig",
+      "target": "appconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/context_processors.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_context_processors",
+      "target": "store_context_processors_cart_context"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/context_processors.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_context_processors_rationale_2",
+      "target": "store_context_processors_cart_context"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms",
+      "target": "store_forms_checkoutform"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms",
+      "target": "store_forms_loginform"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms",
+      "target": "store_forms_meta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms",
+      "target": "store_forms_productsearchform"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms",
+      "target": "store_forms_registerform"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms",
+      "target": "store_models"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_forms"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms_registerform",
+      "target": "store_forms_registerform_clean_email"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_registerform",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_registerform",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_forms_registerform",
+      "target": "usercreationform"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_forms_registerform"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views_register",
+      "target": "store_forms_registerform"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_meta",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_meta",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_loginform",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_loginform",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_forms_loginform"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views_login_view",
+      "target": "store_forms_loginform"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_checkoutform",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_checkoutform",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_forms_checkoutform"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "store_views_checkout",
+      "target": "store_forms_checkoutform"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_productsearchform",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/forms.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_forms_productsearchform",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_forms_productsearchform"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views_home",
+      "target": "store_forms_productsearchform"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/migrations/0001_initial.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "migrations_0001_initial",
+      "target": "migrations_0001_initial_migration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/migrations/0002_product_image_url.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "migrations_0002_product_image_url",
+      "target": "migrations_0002_product_image_url_migration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models",
+      "target": "store_models_meta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests",
+      "target": "store_models"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_models"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models_category",
+      "target": "store_models_category_str"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_tests_storetestcase",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_models_category"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models_product",
+      "target": "store_models_product_display_image_url"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models_product",
+      "target": "store_models_product_str"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_tests_storetestcase",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_models_product"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models_order",
+      "target": "store_models_order_str"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_tests_storetestcase",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_models_order"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models_orderitem",
+      "target": "store_models_orderitem_str"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models_orderitem",
+      "target": "store_models_orderitem_total_price"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_tests_storetestcase",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_models_orderitem"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/models.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_models_wishlist",
+      "target": "store_models_wishlist_str"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L4",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "store_tests_storetestcase",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_models_wishlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_closemobilenav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_closetoast"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L180",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_getcsrftoken"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_getfocusableelements"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_openmobilenav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L223",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_recalculatecarttotals"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_showtoast"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L196",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_updatequantityonserver"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_updatethemeicon"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_updatequantityonserver",
+      "target": "js_main_getcsrftoken"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_openmobilenav",
+      "target": "js_main_closemobilenav"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/static/js/main.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_openmobilenav",
+      "target": "js_main_getfocusableelements"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests",
+      "target": "store_tests_storetestcase"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_setup"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L251",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_admin_login_redirect"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_cart_operations"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_checkout_and_orders"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_home_view"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_login_logout_views"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_product_detail_view"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_profile_view"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_register_view"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "store_tests_storetestcase_test_wishlist_operations"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/tests.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_tests_storetestcase",
+      "target": "testcase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_add_to_cart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L341",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_add_to_wishlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_cart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L220",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_checkout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_home"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_login_view"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_logout_view"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L289",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_order_confirmation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L312",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_order_detail"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L301",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_order_history"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_product_detail"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L364",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_profile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_register"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L176",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_remove_from_cart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_update_cart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/store/views.py",
+      "source_location": "L324",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "store_views",
+      "target": "store_views_wishlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/vercel.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "ecommerce_vercel",
+      "target": "ecommerce_vercel_builds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/vercel.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "ecommerce_vercel",
+      "target": "ecommerce_vercel_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "ecommerce_vercel",
+      "target": "ecommerce_vercel_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_builds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rules_graphify",
+      "target": "rules_graphify_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "workflows_graphify",
+      "target": "workflows_graphify_workflow_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_readme",
+      "target": "ecommerce_readme_shopease_e_commerce_django_project"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_readme_shopease_e_commerce_django_project",
+      "target": "ecommerce_readme_features"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_readme_shopease_e_commerce_django_project",
+      "target": "ecommerce_readme_notes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ecommerce/README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_readme_shopease_e_commerce_django_project",
+      "target": "ecommerce_readme_setup"
+    }
+  ],
+  "hyperedges": []
+}

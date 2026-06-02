@@ -1,0 +1,202 @@
+{
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\ecommerce\\__init__.py": {
+    "mtime": 1780293357.2827,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\ecommerce\\asgi.py": {
+    "mtime": 1780310006.3484595,
+    "ast_hash": "aacd66729a14653899bfca2617f7dcf9",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\ecommerce\\settings.py": {
+    "mtime": 1780377697.666447,
+    "ast_hash": "96e90782f8ea2d485eb7fd8292aa0033",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\ecommerce\\urls.py": {
+    "mtime": 1780375717.5837348,
+    "ast_hash": "9f737f895c5891bcacbd4f917c263a66",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\ecommerce\\wsgi.py": {
+    "mtime": 1780377377.8386817,
+    "ast_hash": "726fbe17a42bc94f6fac96931002d313",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\manage.py": {
+    "mtime": 1780293365.244921,
+    "ast_hash": "a6b75d3513809d81b2c7e80c6fa1bd37",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\seed_data.py": {
+    "mtime": 1780375025.5870857,
+    "ast_hash": "fa091a0f06c3d1b2d5051ce58b85867e",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\__init__.py": {
+    "mtime": 1780293389.1401093,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\admin.py": {
+    "mtime": 1780375078.1002042,
+    "ast_hash": "5972b20bb751722f00db776e920c8485",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\apps.py": {
+    "mtime": 1780293507.96785,
+    "ast_hash": "d98ab9b9277a82da9f2d7f3cf7f9b384",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\context_processors.py": {
+    "mtime": 1780319634.351369,
+    "ast_hash": "48a5b7cf817a8f762f482d76d1db3f67",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\forms.py": {
+    "mtime": 1780319634.351369,
+    "ast_hash": "fedcefc748785da7c1211906f724cda1",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\migrations\\0001_initial.py": {
+    "mtime": 1780311721.5505123,
+    "ast_hash": "694fe2c049384e2979885c34b3b1b63b",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\migrations\\0002_product_image_url.py": {
+    "mtime": 1780321812.1776154,
+    "ast_hash": "c4186c7c6360e5ac6f4294cb4913f259",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\migrations\\__init__.py": {
+    "mtime": 1780310047.2092955,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\models.py": {
+    "mtime": 1780374669.01044,
+    "ast_hash": "7c9087455608c37659cfab52b3013134",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\static\\js\\main.js": {
+    "mtime": 1780374676.066145,
+    "ast_hash": "0740d288779059f87f342f5ab39f3cec",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\urls.py": {
+    "mtime": 1780293478.9938555,
+    "ast_hash": "64442b03ccda70246599edb199fb3950",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\views.py": {
+    "mtime": 1780328280.934106,
+    "ast_hash": "f75a30aa20684986db5ce7f6a3ea97b6",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\.agents\\rules\\graphify.md": {
+    "mtime": 1780326724.7650905,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\.agents\\workflows\\graphify.md": {
+    "mtime": 1780326724.7650905,
+    "ast_hash": "637776aa6f7496d069afe7520c845c8a",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\README.md": {
+    "mtime": 1780318124.8942163,
+    "ast_hash": "93b2f524691edbd8a109eefa1de9789b",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\requirements.txt": {
+    "mtime": 1780377520.8414588,
+    "ast_hash": "bccfc07b91e101e82e32a5565ea2cbeb",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\base.html": {
+    "mtime": 1780377069.1436248,
+    "ast_hash": "10635b18893e21149a68a88a1d61d77f",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\cart.html": {
+    "mtime": 1780328314.221557,
+    "ast_hash": "5e455a9586c92f263872d3e742a765c6",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\checkout.html": {
+    "mtime": 1780328326.7631166,
+    "ast_hash": "1ece3a5e88e46208bbb004c9d8daa287",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\home.html": {
+    "mtime": 1780329035.231057,
+    "ast_hash": "85ac036ff0c5b7780690261e108c3803",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\login.html": {
+    "mtime": 1780328438.2042055,
+    "ast_hash": "31c87497278a941da4c7ed677cb159ac",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\order_confirmation.html": {
+    "mtime": 1780328503.0153623,
+    "ast_hash": "8e7786a965a34c8ce65566f775093d5c",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\order_detail.html": {
+    "mtime": 1780328401.8278308,
+    "ast_hash": "41432e063e43ad01f159b0b8f1725862",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\order_history.html": {
+    "mtime": 1780328382.7790093,
+    "ast_hash": "ca726a96ec55b7c45b2dbb4a898f1c76",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\product_detail.html": {
+    "mtime": 1780328290.5382156,
+    "ast_hash": "3f7d91d704a59eedd42e710060510cdd",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\profile.html": {
+    "mtime": 1780375926.8903644,
+    "ast_hash": "0cbb26eaf7da06e8bdbea9aa4b1ef4e5",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\register.html": {
+    "mtime": 1780328469.8936489,
+    "ast_hash": "3e00a7db20b1970de56f8acded12470e",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\templates\\store\\wishlist.html": {
+    "mtime": 1780328481.9615126,
+    "ast_hash": "b1a5866fc4eab903b6f9b8f213d0e18b",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\static\\images\\hero_background.png": {
+    "mtime": 1780328822.4052682,
+    "ast_hash": "575334272d556246ad2ff4c381ceb0e6",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\graphify.ps1": {
+    "mtime": 1780328948.8790483,
+    "ast_hash": "3f7b3bc361eca9ec9fbb7bf1f998aed1",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\store\\tests.py": {
+    "mtime": 1780375725.9550583,
+    "ast_hash": "66573702c014cef30cfe028840286ac8",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\vercel.json": {
+    "mtime": 1780377387.0494354,
+    "ast_hash": "010e7b57256b464e60b1dfc067f0a708",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\vercel.json": {
+    "mtime": 1780377382.865965,
+    "ast_hash": "9b84b1b4e91972b85ea5b34dad035341",
+    "semantic_hash": ""
+  }
+}

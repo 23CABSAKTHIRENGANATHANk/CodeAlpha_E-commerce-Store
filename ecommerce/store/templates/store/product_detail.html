@@ -1,0 +1,145 @@
+{% extends 'store/base.html' %}
+{% block title %}{{ product.name }} - ShopEase Premium{% endblock %}
+{% block content %}
+
+<section class="product-detail-page" style="margin-top: 1rem;">
+    <!-- Main Product Section Split Layout -->
+    <div class="product-detail-card detail-grid" style="background: var(--surface); backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow);">
+        <!-- Product Image Showcase -->
+        <div class="detail-image" style="position: relative;">
+            <img src="{{ product.display_image_url }}" alt="{{ product.name }}" style="width: 100%; border-radius: var(--radius-md); object-fit: cover;" />
+            <!-- Highlight watermark label -->
+            <span class="badge" style="position: absolute; top: 1.25rem; left: 1.25rem; background: var(--primary); color: #fff; padding: 0.4rem 1rem; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.2);">
+                Premium Collection
+            </span>
+        </div>
+        
+        <!-- Product Buy details -->
+        <div class="detail-info">
+            <div>
+                <p class="product-category" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-tags"></i> {{ product.category.name }}</p>
+                <h1 style="font-size: 2.4rem; font-weight: 900;">{{ product.name }}</h1>
+                
+                <!-- Ratings section -->
+                <div class="rating-stars" style="margin-top: 0.75rem;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span style="font-weight: 700; color: var(--text);">4.8</span>
+                    <span style="color: var(--text-muted); font-size: 0.85rem;">| 32 Verified Customer Reviews</span>
+                </div>
+            </div>
+            
+            <div class="detail-price" style="display: flex; align-items: baseline; gap: 0.75rem;">
+                <span>${{ product.price }}</span>
+                <span style="font-size: 1rem; color: var(--text-muted); text-decoration: line-through; font-weight: 500;">
+                    ${{ product.price|add:"50" }}
+                </span>
+            </div>
+            
+            <p class="product-stock" style="font-size: 0.95rem;">
+                Status: 
+                {% if product.stock > 0 %}
+                    <span class="in-stock"><i class="fa-solid fa-circle-check"></i> In Stock</span> 
+                    <span style="color: var(--text-muted);">({{ product.stock }} units remaining)</span>
+                {% else %}
+                    <span class="out-of-stock"><i class="fa-solid fa-circle-xmark"></i> Out of Stock</span>
+                {% endif %}
+            </p>
+            
+            <p class="product-copy" style="font-size: 1rem; color: var(--text-muted); line-height: 1.75;">
+                {{ product.description }}
+            </p>
+            
+            <!-- Interactive mockup options for premium look -->
+            <div class="product-options">
+                <span class="options-label"><i class="fa-solid fa-circle-dot"></i> Select Color</span>
+                <div class="bubble-selectors">
+                    <button class="bubble-btn active" aria-label="Color Onyx Black">Onyx Black</button>
+                    <button class="bubble-btn" aria-label="Color Space Gray">Space Gray</button>
+                    <button class="bubble-btn" aria-label="Color Frost White">Frost White</button>
+                </div>
+            </div>
+            
+            <!-- Detailed Specifications panel -->
+            <div class="product-meta-specs">
+                <div class="spec-row">
+                    <span class="spec-label">Brand</span>
+                    <span class="spec-value">ShopEase Signature</span>
+                </div>
+                <div class="spec-row">
+                    <span class="spec-label">Warranty</span>
+                    <span class="spec-value">2-Year Limited Coverage</span>
+                </div>
+                <div class="spec-row">
+                    <span class="spec-label">Shipping</span>
+                    <span class="spec-value">Complimentary Free Delivery</span>
+                </div>
+            </div>
+            
+            <!-- Dynamic Actions -->
+            <div class="detail-actions" style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem; flex-wrap: wrap;">
+                {% if product.stock > 0 %}
+                    <a class="btn" href="{% url 'add_to_cart' product.id %}" data-action="add-to-cart" style="flex: 1; padding: 1rem 2rem; font-size: 1.05rem;">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </a>
+                {% else %}
+                    <button class="btn" style="flex: 1; background: var(--border); color: var(--text-muted); cursor: not-allowed; padding: 1rem 2rem;" disabled>
+                        Out of Stock
+                    </button>
+                {% endif %}
+                
+                <!-- Wishlist Heart AJAX button toggle -->
+                <button class="wishlist-heart-btn {% if product.id in wishlist_products %}active{% endif %}" data-url="{% url 'add_to_wishlist' product.id %}" data-action="toggle-wishlist" aria-label="Toggle wishlist item" style="position: static; display: inline-flex; width: 48px; height: 48px; justify-content: center; align-items: center; border-radius: 50%; box-shadow: var(--shadow);">
+                    <i class="{% if product.id in wishlist_products %}fa-solid{% else %}fa-regular{% endif %} fa-heart" style="font-size: 1.2rem;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Related Products Panel -->
+    {% if related_products %}
+        <section class="related-products">
+            <div class="section-heading">
+                <h2><i class="fa-solid fa-cubes"></i> Related Premium Essentials</h2>
+                <a class="link-secondary" href="{% url 'home' %}?category={{ product.category.name|urlencode }}">
+                    Explore Collection <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="related-grid">
+                {% for item in related_products %}
+                    <article class="product-card small-card">
+                        <!-- Wishlist heart dynamic trigger -->
+                        <button class="wishlist-heart-btn {% if item.id in wishlist_products %}active{% endif %}" data-url="{% url 'add_to_wishlist' item.id %}" data-action="toggle-wishlist" aria-label="Toggle wishlist item">
+                            <i class="{% if item.id in wishlist_products %}fa-solid{% else %}fa-regular{% endif %} fa-heart"></i>
+                        </button>
+                        
+                        <a href="{% url 'product_detail' item.id %}" style="display: block;">
+                            <div class="product-image">
+                                <img src="{{ item.display_image_url }}" alt="{{ item.name }}" loading="lazy" />
+                            </div>
+                        </a>
+                        <div class="product-body">
+                            <div>
+                                <span class="product-category" style="font-size: 0.72rem;">{{ item.category.name }}</span>
+                                <h3 style="font-size: 1rem; margin-top: 0.2rem;">
+                                    <a href="{% url 'product_detail' item.id %}" style="color: inherit;">{{ item.name }}</a>
+                                </h3>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price" style="font-size: 1.1rem;">${{ item.price }}</span>
+                                <a class="btn btn-secondary" href="{% url 'product_detail' item.id %}" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                                    View
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </section>
+    {% endif %}
+</section>
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'store/base.html' %}
+{% block title %}Account - ShopEase Premium{% endblock %}
+{% block content %}
+
+<section class="profile-page" style="margin-top: 1rem;">
+    <!-- Title Section -->
+    <div style="margin-bottom: 2.5rem;">
+        <p class="eyebrow"><i class="fa-solid fa-user-shield"></i> Customer Portal</p>
+        <h1 style="font-size: 2.4rem;">Your Dashboard</h1>
+        <p style="color: var(--text-muted);">Manage credentials, view cumulative statistics, and access your recent orders.</p>
+    </div>
+
+    <!-- Responsive Grid Dashboard -->
+    <div class="profile-grid">
+        <!-- Left Side: User Card -->
+        <div class="profile-card">
+            <div class="profile-avatar">
+                {{ user.username|slice:":1"|upper }}
+            </div>
+            <div>
+                <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text);">{{ user.username|capfirst }}</h2>
+                <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-shield-halved"></i> Verified Customer Account</span>
+            </div>
+            
+            <div class="profile-details" style="text-align: left; margin-top: 1rem; border-top: 1px solid var(--border); padding-top: 1.25rem; font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                <div>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); display: block;">Registered Email</span>
+                    <strong style="color: var(--text);"><i class="fa-solid fa-envelope"></i> {{ user.email|default:"no-email@shopease.com" }}</strong>
+                </div>
+                <div>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); display: block;">Joined On</span>
+                    <strong style="color: var(--text);"><i class="fa-solid fa-calendar-check"></i> {{ user.date_joined|date:'F Y'|default:"June 2026" }}</strong>
+                </div>
+            </div>
+            
+            <a class="btn btn-secondary" href="{% url 'logout' %}" style="margin-top: 1rem; padding: 0.75rem 1rem; font-size: 0.88rem; border-color: var(--error); color: var(--error); background: transparent;">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+            </a>
+        </div>
+
+        <!-- Right Side: Cumulative Stats Panel -->
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+            <!-- Quick metrics cards -->
+            <div class="profile-stats">
+                <div class="stat-box">
+                    <h3 style="font-size: 2.2rem; font-weight: 900; color: var(--primary);"><i class="fa-solid fa-truck-ramp-box"></i> {{ total_orders }}</h3>
+                    <p>Total Purchases</p>
+                </div>
+                <div class="stat-box">
+                    <h3 style="font-size: 2.2rem; font-weight: 900; color: var(--primary);"><i class="fa-solid fa-hand-holding-dollar"></i> ${{ total_spent }}</h3>
+                    <p>Total Spent</p>
+                </div>
+            </div>
+
+            <!-- Navigation portal card -->
+            <div class="stat-box" style="text-align: left; display: flex; flex-direction: column; gap: 1rem; padding: 2rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <i class="fa-solid fa-sparkles" style="color: var(--accent);"></i> Account Quick Actions
+                </h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+                    Quickly navigate to review your recently placed transactions, track active standard delivery shipments, or view saved items on your personal wishlist.
+                </p>
+                <div class="profile-actions" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a class="btn" href="{% url 'order_history' %}">
+                        <i class="fa-solid fa-receipt"></i> Transaction History
+                    </a>
+                    <a class="btn btn-secondary" href="{% url 'wishlist' %}">
+                        <i class="fa-solid fa-heart" style="color: #ef4444;"></i> Saved Wishlist Items
+                    </a>
+                    {% if user.is_staff %}
+                        <a class="btn" href="/admin/" style="background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%); color: #0f172a;">
+                            <i class="fa-solid fa-screwdriver-wrench"></i> Admin Panel
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

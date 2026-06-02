@@ -1,0 +1,127 @@
+{% extends 'store/base.html' %}
+{% load static %}
+{% block title %}Home - ShopEase Modern Premium Store{% endblock %}
+{% block content %}
+
+<!-- High-fidelity Hero Block Section -->
+<section class="hero hero-home" style="background-image: linear-gradient(135deg, rgba(37,99,235,0.85), rgba(124,58,237,0.85)), url('{% static 'images/hero_background.png' %}'); background-size: cover; background-position: center;">
+    <div>
+        <p class="eyebrow"><i class="fa-solid fa-sparkles"></i> Premium Modern Store</p>
+        <h1>Curating style &amp; quality for your space.</h1>
+        <p class="hero-description">Discover meticulously crafted essentials, enjoy dynamic fast checkout, and receive secure home delivery. Elevate your everyday style.</p>
+        <div class="hero-actions">
+            <a class="btn" href="#products"><i class="fa-solid fa-bag-shopping"></i> Shop Listings</a>
+            <a class="btn btn-secondary" href="{% url 'order_history' %}"><i class="fa-solid fa-clock-rotate-left"></i> Order History</a>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="hero-card">
+            <p class="hero-card-title"><i class="fa-solid fa-star"></i> Featured Product</p>
+            <h2>Flagship Smartphone</h2>
+            <p>Experience bleeding edge performance, pure dynamic glass finish, and state-of-the-art camera systems.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                <span class="hero-price">$699.99</span>
+                <span class="badge" style="background: rgba(255,255,255,0.2); color: #fff;">In Stock</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filter & Product Display section -->
+<section class="grid-section" id="products">
+    <!-- Categories Filter Panel -->
+    <div class="filters aside-panel">
+        <div class="filters-header">
+            <h2><i class="fa-solid fa-filter"></i> Categories</h2>
+            {% if current_category %}
+                <a class="clear-filter" href="{% url 'home' %}">Clear Filters</a>
+            {% endif %}
+        </div>
+        <div class="category-list">
+            <a class="category-chip {% if not current_category %}active{% endif %}" href="{% url 'home' %}?search={{ request.GET.search|urlencode }}">
+                <span>All Collections</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            {% for category in categories %}
+                <a class="category-chip {% if current_category == category.name %}active{% endif %}" href="{% url 'home' %}?category={{ category.name|urlencode }}&search={{ request.GET.search|urlencode }}">
+                    <span>
+                        <i class="fa-solid {% if category.name == 'Electronics' %}fa-laptop-code{% elif category.name == 'Clothing' %}fa-shirt{% elif category.name == 'Home' %}fa-couch{% elif category.name == 'Accessories' %}fa-glasses{% else %}fa-spa{% endif %}"></i>
+                        {{ category.name }}
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            {% endfor %}
+        </div>
+        <div class="filter-summary">
+            <p>Displaying <strong>{{ products|length }}</strong> premium items</p>
+            {% if current_category %}
+                <p style="margin-top: 0.5rem;">Collection: <strong style="color: var(--primary);">{{ current_category }}</strong></p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Listings Product Cards Grid -->
+    <div class="product-grid">
+        {% if products %}
+            {% for product in products %}
+                <article class="product-card">
+                    <!-- Wishlist Heart Overlay Action -->
+                    <button class="wishlist-heart-btn {% if product.id in wishlist_products %}active{% endif %}" data-url="{% url 'add_to_wishlist' product.id %}" data-action="toggle-wishlist" aria-label="Toggle wishlist item">
+                        <i class="{% if product.id in wishlist_products %}fa-solid{% else %}fa-regular{% endif %} fa-heart"></i>
+                    </button>
+                    
+                    <a href="{% url 'product_detail' product.id %}" aria-label="View product details for {{ product.name }}">
+                        <div class="product-image">
+                            <img src="{{ product.display_image_url }}" alt="{{ product.name }}" loading="lazy" />
+                        </div>
+                    </a>
+                    
+                    <div class="product-body">
+                        <div>
+                            <span class="product-category">{{ product.category.name }}</span>
+                            <h3 style="margin-top: 0.25rem;">
+                                <a href="{% url 'product_detail' product.id %}" style="color: inherit;">{{ product.name }}</a>
+                            </h3>
+                            <!-- Rating indicators -->
+                            <div class="rating-stars" style="margin-top: 0.35rem;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span style="font-size: 0.78rem;">(4.8)</span>
+                            </div>
+                            <p class="product-copy" style="margin-top: 0.5rem;">{{ product.description|truncatewords:16 }}</p>
+                        </div>
+                        
+                        <div class="product-card-footer">
+                            <span class="price">${{ product.price }}</span>
+                            <div class="product-actions">
+                                <a class="btn btn-secondary" href="{% url 'product_detail' product.id %}" aria-label="View details of {{ product.name }}">
+                                    <i class="fa-solid fa-eye"></i> Details
+                                </a>
+                                {% if product.stock > 0 %}
+                                    <a class="btn" href="{% url 'add_to_cart' product.id %}" data-action="add-to-cart" aria-label="Add {{ product.name }} to cart">
+                                        <i class="fa-solid fa-cart-plus"></i> Buy
+                                    </a>
+                                {% else %}
+                                    <button class="btn" style="background: var(--border); color: var(--text-muted); cursor: not-allowed;" disabled>
+                                        Sold Out
+                                    </button>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        {% else %}
+            <div class="empty-state">
+                <i class="fa-solid fa-magnifying-glass" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 1.5rem; display: block;"></i>
+                <h2>No premium products found</h2>
+                <p>We couldn't find matches for your selection. Try browsing all products or clear active filters.</p>
+                <a class="btn" href="{% url 'home' %}"><i class="fa-solid fa-rotate-left"></i> Reset Collection</a>
+            </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

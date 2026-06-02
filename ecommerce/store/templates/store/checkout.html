@@ -1,0 +1,113 @@
+{% extends 'store/base.html' %}
+{% block title %}Checkout - ShopEase Premium{% endblock %}
+{% block content %}
+
+<section class="checkout-page" style="margin-top: 1rem;">
+    <!-- Wizard progress timeline steps -->
+    <div class="checkout-steps">
+        <div class="step-item completed">
+            <span class="step-badge"><i class="fa-solid fa-check"></i></span>
+            <span class="step-label">Basket</span>
+        </div>
+        <div class="step-item active">
+            <span class="step-badge">2</span>
+            <span class="step-label">Shipping</span>
+        </div>
+        <div class="step-item">
+            <span class="step-badge">3</span>
+            <span class="step-label">Payment</span>
+        </div>
+        <div class="step-item">
+            <span class="step-badge">4</span>
+            <span class="step-label">Confirmation</span>
+        </div>
+    </div>
+
+    <!-- Title Section -->
+    <div style="margin-bottom: 2.5rem; text-align: center;">
+        <h1 style="font-size: 2.4rem;">Finalize your premium order.</h1>
+        <p style="color: var(--text-muted);">Enter shipping information and review order items before placement.</p>
+    </div>
+
+    <!-- Dual Column Layout -->
+    <div class="checkout-grid">
+        <!-- Left Side: Shipping Address & Mock Payments Panel -->
+        <div class="checkout-card" style="display: flex; flex-direction: column; gap: 2rem;">
+            <div>
+                <h3 style="border-bottom: 1px solid var(--border); padding-bottom: 0.75rem;"><i class="fa-solid fa-truck-fast"></i> Shipping Destination</h3>
+                <form action="" method="post" style="margin-top: 1.5rem;">
+                    {% csrf_token %}
+                    {{ form.non_field_errors }}
+                    
+                    <div class="form-group">
+                        <label for="id_shipping_address"><i class="fa-solid fa-map-location-dot"></i> Street Address</label>
+                        {{ form.shipping_address }}
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="id_shipping_city"><i class="fa-solid fa-city"></i> City</label>
+                            {{ form.shipping_city }}
+                        </div>
+                        <div class="form-group">
+                            <label for="id_shipping_zipcode"><i class="fa-solid fa-envelopes-bulk"></i> Zip/Postal Code</label>
+                            {{ form.shipping_zipcode }}
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="id_shipping_country"><i class="fa-solid fa-globe"></i> Country</label>
+                        {{ form.shipping_country }}
+                    </div>
+
+                    <!-- Payment selector mockup -->
+                    <div class="product-options" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                        <span class="options-label" style="font-size: 0.88rem; font-weight: 700; color: var(--text);"><i class="fa-solid fa-credit-card"></i> Select Payment Method</span>
+                        <div class="bubble-selectors" style="flex-wrap: wrap;">
+                            <button type="button" class="bubble-btn active" aria-label="Visa Card Payment"><i class="fa-brands fa-cc-visa"></i> Visa</button>
+                            <button type="button" class="bubble-btn" aria-label="Mastercard Payment"><i class="fa-brands fa-cc-mastercard"></i> Mastercard</button>
+                            <button type="button" class="bubble-btn" aria-label="Paypal Payment"><i class="fa-brands fa-cc-paypal"></i> PayPal</button>
+                            <button type="button" class="bubble-btn" aria-label="Apple Pay"><i class="fa-brands fa-cc-apple-pay"></i> Apple Pay</button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-checkout" type="submit" style="padding: 1.1rem; width: 100%; font-size: 1.05rem;">
+                        <i class="fa-solid fa-check-double"></i> Complete &amp; Place Order
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Side: Order summary basket -->
+        <div class="order-summary-panel">
+            <h2>Items Checklist</h2>
+            <ul class="checkout-items" style="max-height: 250px; overflow-y: auto;">
+                {% for item in cart_items %}
+                    <li style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--border);">
+                        <div>
+                            <span style="font-weight: 600;">{{ item.product.name }}</span>
+                            <span style="color: var(--text-muted); font-size: 0.8rem; display: block;">Quantity: {{ item.quantity }}</span>
+                        </div>
+                        <strong class="price" style="font-size: 0.95rem;">${{ item.total }}</strong>
+                    </li>
+                {% endfor %}
+            </ul>
+            
+            <div class="summary-row" style="margin-top: 1rem;">
+                <span style="color: var(--text-muted);">Standard Shipping</span>
+                <span style="color: var(--success); font-weight: 700;">FREE</span>
+            </div>
+            
+            <div class="summary-row total" style="border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 0.5rem;">
+                <span>Grand Total</span>
+                <span>${{ total_price }}</span>
+            </div>
+            
+            <div style="text-align: center; font-size: 0.75rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 1rem;">
+                By completing your order, you agree to ShopEase Terms &amp; Conditions. Secure checkout guaranteed.
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

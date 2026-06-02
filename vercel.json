@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "ecommerce/ecommerce/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/ecommerce/store/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "ecommerce/ecommerce/wsgi.py"
+    }
+  ]
+}

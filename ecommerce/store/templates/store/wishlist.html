@@ -1,0 +1,78 @@
+{% extends 'store/base.html' %}
+{% block title %}Wishlist - ShopEase Premium{% endblock %}
+{% block content %}
+
+<section class="wishlist-page" style="margin-top: 1rem;">
+    <!-- Title Section -->
+    <div style="margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem;">
+        <div>
+            <p class="eyebrow"><i class="fa-solid fa-heart" style="color: #ef4444;"></i> Saved Favorites</p>
+            <h1 style="font-size: 2.4rem;">Your Wishlist</h1>
+            <p style="color: var(--text-muted);">Save products you love and instantly buy them when you are ready.</p>
+        </div>
+        <a class="btn btn-secondary" href="{% url 'home' %}"><i class="fa-solid fa-chevron-left"></i> Keep Browsing</a>
+    </div>
+
+    {% if products %}
+        <!-- Product Grid Listing -->
+        <div class="product-grid">
+            {% for product in products %}
+                <article class="product-card">
+                    <!-- Wishlist Heart Overlay Action -->
+                    <button class="wishlist-heart-btn active" data-url="{% url 'add_to_wishlist' product.id %}" data-action="toggle-wishlist" aria-label="Toggle wishlist item">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                    
+                    <a href="{% url 'product_detail' product.id %}" aria-label="View product details for {{ product.name }}">
+                        <div class="product-image">
+                            <img src="{{ product.display_image_url }}" alt="{{ product.name }}" loading="lazy" />
+                        </div>
+                    </a>
+                    
+                    <div class="product-body">
+                        <div>
+                            <span class="product-category">{{ product.category.name }}</span>
+                            <h3 style="margin-top: 0.25rem;">
+                                <a href="{% url 'product_detail' product.id %}" style="color: inherit;">{{ product.name }}</a>
+                            </h3>
+                            <!-- Rating indicators -->
+                            <div class="rating-stars" style="margin-top: 0.35rem;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span style="font-size: 0.78rem;">(4.8)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card-footer">
+                            <span class="price">${{ product.price }}</span>
+                            <div class="product-actions">
+                                {% if product.stock > 0 %}
+                                    <a class="btn" href="{% url 'add_to_cart' product.id %}" data-action="add-to-cart" aria-label="Add {{ product.name }} to cart">
+                                        <i class="fa-solid fa-cart-plus"></i> Buy
+                                    </a>
+                                {% else %}
+                                    <button class="btn" style="background: var(--border); color: var(--text-muted); cursor: not-allowed;" disabled>
+                                        Sold Out
+                                    </button>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    {% else %}
+        <!-- Empty placeholder -->
+        <div class="empty-state">
+            <i class="fa-solid fa-heart-crack" style="font-size: 3.5rem; color: var(--text-muted); margin-bottom: 1.5rem; display: block;"></i>
+            <h2>Your wishlist is currently empty</h2>
+            <p>Tap the heart icon on any products to preserve them on this private dashboard.</p>
+            <a class="btn" href="{% url 'home' %}"><i class="fa-solid fa-sparkles"></i> Discover Essentials</a>
+        </div>
+    {% endif %}
+</section>
+
+{% endblock %}

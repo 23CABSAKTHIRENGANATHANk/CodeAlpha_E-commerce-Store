@@ -1,0 +1,395 @@
+/* custom css for ShopEase Premium Admin - Dark Glassmorphism Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Override Django Admin theme CSS variables */
+:root {
+    --body-bg: #0b0b14 !important;
+    --body-fg: #f8fafc !important;
+    --primary: hsl(250, 95%, 68%) !important;
+    --primary-fg: #ffffff !important;
+    --header-bg: rgba(18, 18, 36, 0.9) !important;
+    --header-fg: #ffffff !important;
+    --header-link-color: #f8fafc !important;
+    --breadcrumbs-bg: transparent !important;
+    --breadcrumbs-fg: #94a3b8 !important;
+    --breadcrumbs-link-color: hsl(250, 95%, 68%) !important;
+    --link-color: hsl(250, 95%, 68%) !important;
+    --link-hover-color: hsl(250, 95%, 75%) !important;
+    --accent: hsl(45, 100%, 55%) !important;
+    --border-color: rgba(255, 255, 255, 0.08) !important;
+    --darkened-bg: rgba(9, 9, 15, 0.4) !important;
+    --selected-bg: rgba(139, 92, 246, 0.18) !important;
+    --selected-row: rgba(139, 92, 246, 0.12) !important;
+}
+
+/* Global resetting & font family overrides */
+body, input, select, textarea, button, #header, div.breadcrumbs {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+}
+
+body {
+    background-color: #0b0b14 !important;
+    background: radial-gradient(circle at 15% 20%, rgba(139, 92, 246, 0.12), transparent 35%),
+               radial-gradient(circle at 85% 80%, rgba(245, 158, 11, 0.06), transparent 35%),
+               linear-gradient(180deg, #09090f 0%, #11111f 100%) !important;
+    background-attachment: fixed !important;
+    color: #f8fafc !important;
+}
+
+/* Header style override */
+#header {
+    background: rgba(18, 18, 36, 0.85) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+    padding: 1.25rem 2rem !important;
+}
+
+#branding h1 {
+    font-weight: 800 !important;
+    font-size: 1.4rem !important;
+    letter-spacing: -0.04em !important;
+    background: linear-gradient(135deg, hsl(250, 95%, 68%) 0%, hsl(45, 100%, 55%) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+#user-tools {
+    font-weight: 600 !important;
+    color: #94a3b8 !important;
+}
+
+#user-tools a {
+    color: #f8fafc !important;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3) !important;
+    transition: all 0.2s ease !important;
+}
+
+#user-tools a:hover {
+    color: hsl(45, 100%, 55%) !important;
+}
+
+/* Breadcrumbs bar override */
+div.breadcrumbs {
+    background: rgba(18, 18, 36, 0.4) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+    padding: 0.85rem 2rem !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    color: #94a3b8 !important;
+}
+
+div.breadcrumbs a {
+    color: hsl(250, 95%, 68%) !important;
+    font-weight: 700 !important;
+}
+
+/* Dashboard Modules layout styling */
+.module {
+    background: rgba(18, 18, 36, 0.6) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+    margin-bottom: 2rem !important;
+    overflow: hidden !important;
+}
+
+.module caption, .module h2, .module h3 {
+    background: rgba(255, 255, 255, 0.03) !important;
+    color: #f8fafc !important;
+    font-weight: 800 !important;
+    font-size: 1rem !important;
+    letter-spacing: -0.02em !important;
+    padding: 1rem 1.5rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.module table {
+    width: 100% !important;
+}
+
+/* Tables custom styling */
+#changelist {
+    background: rgba(18, 18, 36, 0.5) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25) !important;
+}
+
+.results table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+}
+
+.results table thead th {
+    background: rgba(255, 255, 255, 0.02) !important;
+    color: #94a3b8 !important;
+    font-weight: 700 !important;
+    font-size: 0.78rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    padding: 1.1rem 1.5rem !important;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.results table tbody tr {
+    transition: background-color 0.2s ease !important;
+}
+
+.results table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.01) !important;
+}
+
+.results table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.results table tbody td {
+    padding: 1rem 1.5rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    font-size: 0.9rem !important;
+    color: #f8fafc !important;
+}
+
+.results table tbody td a {
+    color: #f8fafc !important;
+    font-weight: 600 !important;
+}
+
+.results table tbody td a:hover {
+    color: hsl(250, 95%, 68%) !important;
+}
+
+/* Form fields customization */
+.form-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    padding: 1.5rem !important;
+    background: transparent !important;
+}
+
+.form-row label {
+    color: #94a3b8 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Styled Inputs, Select Boxes, and Textareas */
+input[type=text], input[type=password], input[type=email], input[type=number], select, textarea {
+    background: rgba(9, 9, 15, 0.5) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 8px !important;
+    color: #f8fafc !important;
+    padding: 0.6rem 0.90rem !important;
+    font-size: 0.92rem !important;
+    outline: none !important;
+    transition: all 0.25s ease !important;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, select:focus, textarea:focus {
+    border-color: hsl(250, 95%, 68%) !important;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25) !important;
+    background: rgba(9, 9, 15, 0.7) !important;
+}
+
+/* Buttons style override */
+.button, input[type=submit], input[type=button], .submit-row input, .submit-row a.deletelink {
+    background: hsl(250, 95%, 68%) !important;
+    border: none !important;
+    border-radius: 9999px !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 0.92rem !important;
+    padding: 0.65rem 1.5rem !important;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer !important;
+    text-transform: none !important;
+}
+
+.button:hover, input[type=submit]:hover, input[type=button]:hover, .submit-row input:hover {
+    background: hsl(250, 95%, 75%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.45) !important;
+}
+
+.submit-row a.deletelink {
+    background: rgba(239, 68, 68, 0.15) !important;
+    color: #f87171 !important;
+    border: 1px solid rgba(239, 68, 68, 0.25) !important;
+    box-shadow: none !important;
+}
+
+.submit-row a.deletelink:hover {
+    background: #ef4444 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Filter side panel styling */
+#changelist-filter {
+    background: rgba(18, 18, 36, 0.9) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.07) !important;
+    border-radius: 0 16px 16px 0 !important;
+}
+
+#changelist-filter h2 {
+    background: rgba(255, 255, 255, 0.02) !important;
+    color: #f8fafc !important;
+    font-weight: 800 !important;
+    padding: 1.1rem 1.5rem !important;
+    font-size: 0.88rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+#changelist-filter ul {
+    padding: 0.75rem 1.5rem 1.5rem !important;
+}
+
+#changelist-filter li a {
+    color: #94a3b8 !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    padding: 0.45rem 0 !important;
+    display: block !important;
+    transition: all 0.2s ease !important;
+}
+
+#changelist-filter li a:hover, #changelist-filter li.selected a {
+    color: hsl(250, 95%, 68%) !important;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Custom Status Badges in List Views */
+.badge-stock {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.badge-stock.instock {
+    background-color: rgba(52, 211, 153, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
+.badge-stock.lowstock {
+    background-color: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.badge-stock.outstock {
+    background-color: rgba(248, 113, 113, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(248, 113, 113, 0.25);
+}
+
+.badge-order-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    text-transform: uppercase;
+}
+
+.badge-order-status.confirmed { background-color: rgba(139, 92, 246, 0.15); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.25); }
+.badge-order-status.shipped { background-color: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25); }
+.badge-order-status.delivered { background-color: rgba(52, 211, 153, 0.15); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.25); }
+.badge-order-status.cancelled { background-color: rgba(248, 113, 113, 0.15); color: #f87171; border: 1px solid rgba(248, 113, 113, 0.25); }
+.badge-order-status.pending { background-color: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.25); }
+
+/* Custom search bar styling */
+#searchbar {
+    background: rgba(9, 9, 15, 0.6) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 9999px !important;
+    color: #f8fafc !important;
+    padding: 0.6rem 1.25rem !important;
+    width: 320px !important;
+}
+
+#searchbar:focus {
+    border-color: hsl(250, 95%, 68%) !important;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25) !important;
+}
+
+#changelist-search input[type=submit] {
+    margin-left: 0.5rem !important;
+    border-radius: 9999px !important;
+}
+
+/* Custom scrollbars for a premium feel */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(9, 9, 15, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Align inline forms nicely */
+.inline-group {
+    background: rgba(18, 18, 36, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    margin-top: 2rem !important;
+}
+
+.inline-group h2 {
+    background: rgba(255, 255, 255, 0.02) !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #f8fafc !important;
+    padding: 0.85rem 1.25rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.inline-related h3 {
+    background: transparent !important;
+    border: none !important;
+    color: hsl(250, 95%, 68%) !important;
+    font-weight: 700 !important;
+    font-size: 0.88rem !important;
+    padding: 0.75rem 1rem !important;
+}
+
+/* Django default list editable table field overrides */
+.results table tbody td select {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.82rem !important;
+    border-radius: 6px !important;
+}
+
+/* Custom layout shadows for image previews */
+.admin-thumbnail {
+    border: 1.5px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+}
