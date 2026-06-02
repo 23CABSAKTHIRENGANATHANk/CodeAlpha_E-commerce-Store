@@ -190,13 +190,18 @@
     "semantic_hash": ""
   },
   "E:\\project\\project\\CodeAlpha_ E-commerce Store\\ecommerce\\vercel.json": {
-    "mtime": 1780377387.0494354,
-    "ast_hash": "010e7b57256b464e60b1dfc067f0a708",
+    "mtime": 1780380808.399007,
+    "ast_hash": "2c29bd21581e9c3ad88f9d59c480114c",
     "semantic_hash": ""
   },
   "E:\\project\\project\\CodeAlpha_ E-commerce Store\\vercel.json": {
-    "mtime": 1780377382.865965,
-    "ast_hash": "9b84b1b4e91972b85ea5b34dad035341",
+    "mtime": 1780380797.5762706,
+    "ast_hash": "4c33e5d98b425d3caf6677ab6a5df130",
+    "semantic_hash": ""
+  },
+  "E:\\project\\project\\CodeAlpha_ E-commerce Store\\README.md": {
+    "mtime": 1780379131.4538605,
+    "ast_hash": "f4164ef2f6da46b2fc13d096d657c914",
     "semantic_hash": ""
   }
 }

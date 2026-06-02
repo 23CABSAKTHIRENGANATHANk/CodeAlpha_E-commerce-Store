@@ -1,13 +1,18 @@
 # Graph Report - CodeAlpha_ E-commerce Store  (2026-06-02)
 
 ## Corpus Check
-- 26 files · ~35,167 words
+- 27 files · ~35,218 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 125 nodes · 184 edges · 23 communities (10 shown, 13 thin omitted)
+- 126 nodes · 184 edges · 24 communities (11 shown, 13 thin omitted)
 - Extraction: 70% EXTRACTED · 30% INFERRED · 0% AMBIGUOUS · INFERRED: 55 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `b9bf5aea`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
@@ -57,7 +62,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (23 total, 13 thin omitted)
+## Communities (24 total, 13 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.18
@@ -92,11 +97,11 @@ Nodes (3): builds, routes, version
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `StoreTestCase` connect `Community 20` to `Community 0`, `Community 1`?**
-  _High betweenness centrality (0.095) - this node is a cross-community bridge._
+  _High betweenness centrality (0.094) - this node is a cross-community bridge._
 - **Why does `OrderItem` connect `Community 1` to `Community 0`, `Community 2`, `Community 20`?**
-  _High betweenness centrality (0.061) - this node is a cross-community bridge._
+  _High betweenness centrality (0.060) - this node is a cross-community bridge._
 - **Why does `Order` connect `Community 0` to `Community 1`, `Community 2`, `Community 20`?**
-  _High betweenness centrality (0.052) - this node is a cross-community bridge._
+  _High betweenness centrality (0.051) - this node is a cross-community bridge._
 - **Are the 14 inferred relationships involving `OrderItem` (e.g. with `CategoryAdmin` and `LowStockFilter`) actually correct?**
   _`OrderItem` has 14 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 14 inferred relationships involving `Order` (e.g. with `CategoryAdmin` and `LowStockFilter`) actually correct?**

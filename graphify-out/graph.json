@@ -988,7 +988,7 @@
       "label": "routes",
       "file_type": "code",
       "source_file": "ecommerce/vercel.json",
-      "source_location": "L9",
+      "source_location": "L13",
       "id": "ecommerce_vercel_routes",
       "community": 19,
       "norm_label": "routes"
@@ -1033,7 +1033,7 @@
       "label": "routes",
       "file_type": "code",
       "source_file": "vercel.json",
-      "source_location": "L9",
+      "source_location": "L13",
       "id": "vercel_routes",
       "community": 22,
       "norm_label": "routes"
@@ -1073,6 +1073,15 @@
       "id": "workflows_graphify_workflow_graphify",
       "community": 16,
       "norm_label": "workflow: graphify"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme",
+      "community": 23,
+      "norm_label": "readme.md"
     },
     {
       "label": "README.md",
@@ -2886,9 +2895,9 @@
       "source_file": "ecommerce/vercel.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecommerce_vercel",
-      "target": "ecommerce_vercel_builds",
-      "confidence_score": 1.0
+      "target": "ecommerce_vercel_builds"
     },
     {
       "relation": "contains",
@@ -2896,9 +2905,9 @@
       "source_file": "ecommerce/vercel.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecommerce_vercel",
-      "target": "ecommerce_vercel_routes",
-      "confidence_score": 1.0
+      "target": "ecommerce_vercel_routes"
     },
     {
       "relation": "contains",
@@ -2906,9 +2915,9 @@
       "source_file": "ecommerce/vercel.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ecommerce_vercel",
-      "target": "ecommerce_vercel_version",
-      "confidence_score": 1.0
+      "target": "ecommerce_vercel_version"
     },
     {
       "relation": "contains",
@@ -2916,9 +2925,9 @@
       "source_file": "vercel.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vercel",
-      "target": "vercel_builds",
-      "confidence_score": 1.0
+      "target": "vercel_builds"
     },
     {
       "relation": "contains",
@@ -2926,9 +2935,9 @@
       "source_file": "vercel.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vercel",
-      "target": "vercel_routes",
-      "confidence_score": 1.0
+      "target": "vercel_routes"
     },
     {
       "relation": "contains",
@@ -2936,9 +2945,9 @@
       "source_file": "vercel.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vercel",
-      "target": "vercel_version",
-      "confidence_score": 1.0
+      "target": "vercel_version"
     },
     {
       "relation": "contains",
@@ -3001,5 +3010,6 @@
       "target": "ecommerce_readme_setup"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "b9bf5aead2c6951bc72198a77809f0052643fb62"
 }
